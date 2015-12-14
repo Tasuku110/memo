@@ -51,9 +51,21 @@ class NotesController extends AppController {
 			$this->Session->setFlash('データの更新に失敗しました。');
 		}
 
-		 if(!$this->request->data) {
+		if(!$this->request->data) {
 		 	$this->request->data = $note;
-		 }
-
+		}
 	}
+
+  public function delete($id) {
+    if($this->request->is('get')){
+      throw new MethodNotAllowedException();
+    }
+
+    if($this->Note->delete($id)) {
+      $this->Session->setFlash('削除しました。');
+      return $this->redirect(array('action'=>'index'));
+    }
+
+    $this->Session->setFlash('削除に失敗しました。');
+  }
 }

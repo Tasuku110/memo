@@ -1,5 +1,10 @@
 <h2 class="title"><?php echo h($note['Note']['title']); ?></h2>
-<nav><?php echo $this->Html->link('メモ編集', array('action'=>'edit', $note['Note']['id'])); ?></nav>
+<nav>
+<ul>
+  <li><?php echo $this->Html->link('メモ編集', array('action'=>'edit', $note['Note']['id'])); ?></li>
+  <li><?php echo $this->Form->postLink('メモ削除',array('action'=>'delete', $note['Note']['id']) ,array('confirm' => '削除します。よろしいですか？')); ?></li>
+</ul>
+</nav>
 
 <p><small>created: <?php echo h($note['Note']['created']); ?></small></p>
 
