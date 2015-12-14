@@ -39,7 +39,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link('Home', '/'); ?></h1>
+			<h1><?php echo $this->Html->link('MyMemo', '/'); ?>　　
+			<?php echo $this->Html->link('新規メモ作成', array('action'=>'add')); ?>
+			</h1>
 		</div>
 		<div id="content">
 
