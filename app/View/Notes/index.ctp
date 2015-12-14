@@ -1,5 +1,5 @@
-<h2>メモ一覧</h2>
-
+<h2 class="title">メモ一覧</h2>
+<nav><?php echo $this->Html->link('新規メモ登録', array('action'=>'add')); ?></nav>
 <table>
 	<tr>
 		<th>Title</th>
