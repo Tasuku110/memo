@@ -1,4 +1,4 @@
-<h2 class="title"><?php echo h($note['Note']['title']); ?></h2>
+<h3><?php echo h($note['Note']['title']); ?></h3>
 <nav>
 <ul>
   <li><?php echo $this->Html->link('メモ編集', array('action'=>'edit', $note['Note']['id'])); ?></li>

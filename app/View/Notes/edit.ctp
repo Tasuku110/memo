@@ -1,4 +1,4 @@
-<h2 class="title">メモ編集</h2>
+<h3>メモ編集</h3>
 
 <?php 
 echo $this->Form->create('Note');

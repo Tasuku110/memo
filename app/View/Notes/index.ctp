@@ -1,4 +1,4 @@
-<h2 class="title">メモ一覧</h2>
+<h3>メモ一覧</h3>
 <nav>
 <ul>
 <li><?php echo $this->Html->link('新規メモ登録', array('action'=>'add')); ?></li>
@@ -6,7 +6,7 @@
 </nav>
 <table>
 	<tr>
-		<th>Title</th>
+		<th>件名</th>
 	</tr>
 
 	<?php foreach ($notes as $note): ?>

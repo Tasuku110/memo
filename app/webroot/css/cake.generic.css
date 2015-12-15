@@ -72,22 +72,21 @@ h4 {
 	font-weight: normal;
 }
 ul, li {
-	margin: 0 12px;
+	/*margin: 0 12px;*/
 }
 p {
 	margin: 0 0 1em 0;
 }
 
 nav {
-	display: inline;
 }
 
 nav > ul {
-	display: inline;
 }
 
 nav > ul > li {
-	display: inline;
+	display: inline-block;
+	margin-bottom:10px;
 }
 
 nav > ul > li > a {
@@ -170,6 +169,7 @@ table {
 	border-right:0;
 	clear: both;
 	color: #333;
+	margin-top:10px;
 	margin-bottom: 10px;
 	width: 100%;
 }
